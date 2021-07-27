@@ -59,33 +59,62 @@ body {
 }
 
 #projects {
+  padding: 100px;
   background-color: #45567d;
+  height: 1000px;
+  text-align: center;
 }
 
 #projects h2 {
   text-align: center;
+  margin: 0 auto 0 auto;
+  max-width: 380px;
   color: white;
-  padding: 30px;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
+  border-bottom: 1px solid white;
+  padding: 3px;
 }
 
-/* #projects-grid {
-  display: flex;
+#projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
 }
 
-#project-tile {
-  max-width: 25%;
-}
-
-#project-img {
-  max-width: 100%;
+.project-img {
+  width: 100%;
   object-fit: cover;
-} */
+  max-height: 100%;
+}
+
+.project-desc a {
+  width: 100%;
+  background-color: #303841;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#show-all,
+#show-all:visited {
+  background-color: #303841;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5em;
+  width: 150px;
+}
+
+#show-all:hover,
+#show-all:active {
+  background-color: #be3144;
+}
 
 #contact {
   background-color: #303841;
-  height: 400px;
+  height: 80vh;
   border-bottom: 3px solid #be3144;
   color: white;
   text-align: center;
@@ -93,7 +122,7 @@ body {
 
 #contact h1 {
   font-size: 3em;
-  padding-top: 100px;
+  padding-top: 250px;
 }
 
 #contact p {
