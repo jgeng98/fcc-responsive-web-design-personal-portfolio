@@ -61,7 +61,7 @@ body {
 #projects {
   padding: 100px;
   background-color: #45567d;
-  height: 1000px;
+  /* height: 1000px; */
   text-align: center;
 }
 
@@ -117,12 +117,15 @@ body {
   height: 80vh;
   border-bottom: 3px solid #be3144;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 #contact h1 {
   font-size: 3em;
-  padding-top: 250px;
 }
 
 #contact p {
@@ -134,6 +137,8 @@ body {
   padding: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #contact a,
@@ -153,22 +158,21 @@ body {
 #footer {
   background-color: #303841;
   color: white;
-  height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #footer p {
-  line-height: 100px;
-  font-size: 1.5em;
+  font-size: 1.1em;
+  margin: 35px;
 }
 
 #disclaimer {
-  padding-left: 80px;
+  padding-left: 50px;
 }
 
 #created-for {
-  padding-right: 80px;
+  padding-right: 50px;
 }
 
 #created-for a {
