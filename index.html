@@ -11,23 +11,19 @@
 
   <body>
     <nav id="navbar">
-      <ul>
-        <li>
-          <a class="nav-link" href="#welcome-section">About</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#projects">Work</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#profile-link">Contact</a>
-        </li>
-      </ul>
+      <div id="nav-links">
+        <a class="nav-link" href="#welcome-section">About</a>
+
+        <a class="nav-link" href="#projects">Work</a>
+
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
     </nav>
 
     <main>
       <section id="welcome-section">
-        <h1>Hey I am Mimic</h1>
-        <p>a web developer</p>
+        <h1>Hey I'm Jessie</h1>
+        <p>a learning web developer</p>
       </section>
 
       <section id="projects">
@@ -35,7 +31,7 @@
 
         <div id="projects-grid">
           <div class="project-tile">
-            <a href="https://codepen.io/jgeng98/full/JjNOLdr"
+            <a target="_blank" href="https://codepen.io/jgeng98/full/JjNOLdr"
               ><img
                 class="project-img"
                 src="/Resources/tribute-page.png"
@@ -44,12 +40,14 @@
             </a>
 
             <p class="project-desc">
-              <a href="https://codepen.io/jgeng98/full/JjNOLdr">Tribute Page</a>
+              <a target="_blank" href="https://codepen.io/jgeng98/full/JjNOLdr"
+                >Tribute Page</a
+              >
             </p>
           </div>
 
           <div class="project-tile">
-            <a href="https://codepen.io/jgeng98/full/rNmYEdw"
+            <a target="_blank" href="https://codepen.io/jgeng98/full/rNmYEdw"
               ><img
                 src="/Resources/survey-form.png"
                 alt="Screenshot of survey form"
@@ -61,7 +59,7 @@
           </div>
 
           <div class="project-tile">
-            <a href="https://codepen.io/jgeng98/full/MWmrgaL"
+            <a target="_blank" href="https://codepen.io/jgeng98/full/MWmrgaL"
               ><img
                 src="/Resources/product-landing.png"
                 alt="Screenshot of product landing"
@@ -87,24 +85,31 @@
               >
             </p>
           </div>
+
+          <a target="_blank" href="https://codepen.io/jgeng98/"
+            >Show all <i class="fas fa-chevron-right"></i
+          ></a>
         </div>
       </section>
 
-      <section id="profile-link">
+      <section id="contact">
         <h1>Let's work together...</h1>
 
         <p>How do you take your coffee?</p>
 
-        <div id="links">
-          <a href="https://www.facebook.com"
+        <div id="prof-links">
+          <a target="_blank" href="https://www.facebook.com"
             ><i class="fab fa-facebook"></i> Facebook</a
           >
 
-          <a href="https://github.com/jgeng98/"
+          <a
+            id="profile-link"
+            target="_blank"
+            href="https://github.com/jgeng98/"
             ><i class="fab fa-github"></i> GitHub</a
           >
 
-          <a href="https://www.twitter.com"
+          <a target="_blank" href="https://www.twitter.com"
             ><i class="fab fa-twitter"></i> Twitter</a
           >
 
@@ -118,15 +123,17 @@
     </main>
 
     <footer id="footer">
-      <p>
+      <p id="disclaimer">
         **This is a semi-fake portfolio. All the projects are real but the
         contact details are not.
       </p>
 
-      <p>
+      <p id="created-for">
         © Created for
-        <a href="https://www.freecodecamp.com/">freeCodeCamp </a>
-        <a href="https://www.freecodecamp.com/"
+        <a target="_blank" href="https://www.freecodecamp.com/"
+          >freeCodeCamp
+        </a>
+        <a target="_blank" href="https://www.freecodecamp.com/"
           ><i class="fab fa-free-code-camp"></i
         ></a>
       </p>
